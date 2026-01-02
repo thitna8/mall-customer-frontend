@@ -8,17 +8,15 @@ form.addEventListener("submit", async (e) => {
   const age = document.getElementById("age").value;
   const income = document.getElementById("income").value;
 
-  const response = await fetch("http://127.0.0.1:8000/predict", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      gender: parseInt(gender),
-      age: parseInt(age),
-      income: parseInt(income)
-    })
-  });
+ const response = await fetch("https://mall-customer-api.onrender.com/predict", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    gender: parseInt(gender),
+    age: parseInt(age),
+    income: parseInt(income)
+  })
+});
 
   const data = await response.json();
 
