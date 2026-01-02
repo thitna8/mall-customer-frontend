@@ -14,7 +14,7 @@ form.addEventListener("submit", async (e) => {
   }
 
   try {
-    const response = await fetch("https://mall-customer-api-1.onrender.com", {
+    const response = await fetch("https://mall-customer-api-1.onrender.com/predict", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
