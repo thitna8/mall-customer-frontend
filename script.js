@@ -8,7 +8,7 @@ form.addEventListener("submit", async (e) => {
   const age = document.getElementById("age").value;
   const income = document.getElementById("income").value;
 
- const response = await fetch("https://mall-customer-api.onrender.com/predict", {
+ const response = await fetch("https://mall-customer-api-1.onrender.com/predict", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({
