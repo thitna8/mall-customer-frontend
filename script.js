@@ -8,7 +8,6 @@ form.addEventListener("submit", async (e) => {
   const age = document.getElementById("age").value;
   const income = document.getElementById("income").value;
 
-  // Check if inputs are valid
   if (gender === "" || age === "" || income === "") {
     alert("Please fill all fields!");
     return;
@@ -44,4 +43,3 @@ form.addEventListener("submit", async (e) => {
     alert("Prediction failed! Check console for details.");
   }
 });
-
